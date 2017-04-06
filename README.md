@@ -18,10 +18,5 @@ Enable connections to your X11 server
 
 Then,
 
-`docker run -v /tmp/.X11-unix/X0:/tmp/.X11-unix/X0 -it bash -l`
+`docker run -v /tmp/.X11-unix/X0:/tmp/.X11-unix/X0`
 
-once running a shell in the container, start firefox:
-
-`$ firefox`
-
-**note** firefox might crash the first time you start it up. Just hit the `Restart Firefox` button. I still haven't figured out why that's the case

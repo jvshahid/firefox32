@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+firefox
+
+# firefox will crash on the first start, probably because it is trying to
+# display a splash screen and is passing invalid argument to the X11 server
+if pgrep -f crashreporter > /dev/null 2>&1; then
+    pkill -f crashreporter
+    firefox
+fi
