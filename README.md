@@ -18,5 +18,4 @@ Enable connections to your X11 server
 
 Then,
 
-`docker run -v /tmp/.X11-unix/X0:/tmp/.X11-unix/X0 jvshahid/firefox32`
-
+`docker run --rm -v /tmp/.X11-unix/X0:/tmp/.X11-unix/X0 jvshahid/firefox32`
